@@ -1,9 +1,14 @@
-# CubePay API library for PHP 
+# CubePay API standard library for PHP 
 A third-party cryptocurrency payment gateway. 
 
 Make it easy for receiving cryptocurrency!
 
 More information at http://cubepay.io.
+
+
+## API Document
+
+https://document.cubepay.io
 
 ## Installation
 - The minimum required PHP version of Yii is PHP 5.4.
@@ -61,5 +66,3 @@ Query payment information by specific identity
 ```
 $response = $cubepay->queryPayment($id = null, $merchantTransactionId = null);
 ```
-
-## API Document
