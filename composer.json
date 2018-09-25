@@ -1,0 +1,21 @@
+{
+    "name": "cubepay/cubepay-api-library-php",
+    "description": "CubePay API library for PHP, a third-party cryptocurrency payment gateway.",
+    "type": "project",
+    "keywords": ["cubepay", "api", "cryptocurrency", "payment"],
+    "require": {
+        "php": ">=5.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "CubePay",
+            "email": "service@cubepay.io"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "CubePay\\": "src/"
+        }
+    }
+}
