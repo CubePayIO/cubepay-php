@@ -1,5 +1,5 @@
 {
-    "name": "cubepay/cubepay-api-library-php",
+    "name": "cubepay/cubepay-api-library",
     "description": "CubePay API library for PHP, a third-party cryptocurrency payment gateway.",
     "type": "project",
     "keywords": ["cubepay", "api", "cryptocurrency", "payment"],
