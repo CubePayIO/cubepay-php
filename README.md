@@ -21,6 +21,8 @@ $ php composer.phar require cubepay/cubepay-api-library
 ## Usage
 **Initialization**
 ```
+use CubePay\CubePay;
+
 $cubepay = new CubePay(CLIENT_ID, CLIENT_SECRET, URL);
 ```
 
