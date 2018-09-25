@@ -32,7 +32,7 @@ You can use these currencies at payment API for receive/send coin.
 $response = $cubepay->getCoin();
 ```
 
-**Getavailable fiat currenies.**
+**Get available fiat currenies.**
 
 You can only use these fiat currencies for your product's original list price. We'll convert value by exchange rate between currency of list price and currency of actual paid.
 
