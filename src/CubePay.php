@@ -15,8 +15,8 @@ class CubePay {
     }
 
     /**
-     * Get list of available fiat currenies.
-     * You can only use these fiat currencies for your product's original list price, not for actual receive payment currency.
+     * Get list of available cryptocurrencies.
+     * You can use these currencies at payment API for receive/send coin.
      */
     public function getCoin() {
         $method = "/currency/coin";
@@ -30,8 +30,8 @@ class CubePay {
     }
 
     /**
-     * Get list of available cryptocurrencies.
-     * You can only use these fiat currencies for your product's original list price, not for receive, 
+     * Get list of available fiat currenies.
+     * You can only use these fiat currencies for your product's original list price, not for receive/send, 
      * we'll convert value by exchange rate between currency of list price and currency of actual paid.
      */
     public function getFiat() {
