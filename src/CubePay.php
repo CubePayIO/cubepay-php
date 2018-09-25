@@ -73,7 +73,7 @@ class CubePay {
     }
 
     /**
-     * Initial order with specific coin and amount that customer use to pay. Order will expire after 6 hours.
+     * Initial order with specific coin. Order will expire after 6 hours.
      * When you define the parameter send_coin_id, receive_address, send_amount to send back coin to your customer, 
      * we'll lock the amount of send coin and fee temporarily and unlock until payment finish or expired.
      */
