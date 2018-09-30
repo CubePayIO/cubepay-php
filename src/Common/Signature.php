@@ -28,12 +28,12 @@ class Signature {
     }
 
     public function verifySignature($params) {
-        if (isset($params["sign"])) {
-            unset($params["sign"]);
-        }
-        $serverVerify = $this->generateSignature($params, $this->clientSecret);
+        $clientSign = $params["sign"];
+        unset($params["sign"]);
 
-        return $serverVerify === $this->clientSecret;
+        $serverSgin = $this->generateSignature($params, $this->clientSecret);
+
+        return $serverSgin === $clientSign;
     }
 
 }

@@ -9,7 +9,6 @@ class CubePay {
     private $clientId, $httpRequest, $signature;
 
     public function __construct($clientId, $clientSecret, $url) {
-        $this->clientId = $clientId;
         $this->httpRequest = new HttpRequest($url);
         $this->signature = new Signature($clientId, $clientSecret);
     }

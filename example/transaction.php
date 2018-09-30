@@ -7,7 +7,7 @@ $cubepay = new CubePay(CLIENT_ID, CLIENT_SECRET, URL);
 $coinList = $cubepay->getCoin()->data;
 $fiatList = $cubepay->getFiat()->data;
 
-if (isset($_POST["execute"])) {
+if (isset($_POST) && isset($_POST["execute"])) {
     if ($_POST["execute"] == "paymentCoin") {
         $response = $cubepay->doPaymentByCoinId($_POST["coin_id"], $_POST["source_coin_id"], $_POST["source_amount"], $_POST["item_name"], $_POST["merchant_transaction_id"], @$_POST["other"], @$_POST["return_url"], @$_POST["ipn_url"], @$_POST["send_coin_id"], @$_POST["send_amount"], @$_POST["receive_address"]);
     } elseif ($_POST["execute"] == "payment") {
@@ -16,6 +16,11 @@ if (isset($_POST["execute"])) {
         $response = $cubepay->queryPayment(@$_POST["id"], @$_POST["merchant_transaction_id"]);
     }
 }
+
+//if (isset($_POST) && !isset($_POST["execute"])) {
+//    $response = $cubepay->signature->verifySignature($_POST);
+//    var_dump($response);exit;
+//}
 
 ?>
 

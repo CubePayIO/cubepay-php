@@ -13,7 +13,7 @@ class HttpRequest {
         $response = $this->execute($this->url . $method, $params);
 
         if (!self::isJSON($response)) {
-            $result = $name = (object)[
+            $result = (object)[
                         'status' => '500',
                         'last'   => 'Request fail.',
             ];
