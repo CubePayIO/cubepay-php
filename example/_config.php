@@ -1,8 +1,12 @@
 <?php
 require '../vendor/autoload.php';
 
-define("CLIENT_ID", "3874216a29c69352f3d5576c4ece090c");
-define("CLIENT_SECRET", "6RGgjhRCadwqtj4PeqKkuf8PucPKKJKKRsLtDgNx");
+# GET CLIENT_ID, CLIENT_SECRET on http://cubepay.io
+define("CLIENT_ID", "Your CLIENT ID");
+define("CLIENT_SECRET", "Your CLIENT SECRET");
+
+# Live mode : https://api.cubepay.io
+# Sandbox mode : https://api.sandbox.cubepay.io
 define("URL", "https://api.cubepay.io");
 
 ?>
