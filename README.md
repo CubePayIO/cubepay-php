@@ -3,7 +3,7 @@ A third-party cryptocurrency payment gateway.
 
 Make it easy for receiving cryptocurrency!
 
-More information at http://cubepay.io.
+More information at https://cubepay.io.
 
 
 ## API Document
