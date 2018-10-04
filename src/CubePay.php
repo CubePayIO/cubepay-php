@@ -6,7 +6,7 @@ use CubePay\Common\Signature;
 
 class CubePay {
 
-    private $clientId, $httpRequest, $signature;
+    private $httpRequest, $signature;
 
     public function __construct($clientId, $clientSecret, $url) {
         $this->httpRequest = new HttpRequest($url);
